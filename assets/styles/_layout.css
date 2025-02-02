@@ -1,0 +1,49 @@
+#wrapper {
+    display: grid;
+    width: min(100% - 4em, 1200px);
+    margin: 0 auto;
+}
+
+#header {
+    grid-area: header;
+}
+
+#hero {
+    grid-area: hero;
+}
+
+#aside {
+    grid-area: aside;
+}
+
+#main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media (width < 650px) {
+    #wrapper {
+        grid-template-areas:
+            "header"
+            "hero"
+            "main"
+            "aside"
+            "footer";
+    }
+}
+
+@media (width > 650px) {
+    #wrapper {
+        grid-template-areas:
+            "header header header header"
+            "hero hero hero hero"
+            "aside main main main"
+            "footer footer footer footer";
+    }
+}

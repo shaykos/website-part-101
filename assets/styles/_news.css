@@ -1,0 +1,22 @@
+#news {
+    margin: 20px 15px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#news h2 {
+    color: #3b55c5;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+.news-item {
+    background-color: rgb(255, 194, 103);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.news-item:nth-child(even) {
+    background-color: #f0f0f0;
+}

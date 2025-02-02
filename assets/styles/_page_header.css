@@ -1,0 +1,23 @@
+#header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header nav ul li{
+    display: inline;
+    margin-left: 10px;
+}
+
+#header {
+    /*הגדרת תצוגת רשת לאלמנט*/
+    display: grid;
+    /*הרשת מורכבת משורה אחת ו-2 תאים בכל שורה*/
+    grid-template-columns: 70% 30%;
+    /*y מיקום האלמנטים על ציר ה */
+    align-items: center;
+}
+
+#header img{
+    margin: auto;
+}
